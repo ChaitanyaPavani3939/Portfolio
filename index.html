@@ -1,0 +1,222 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8bd46c9388.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#internship">Internships</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+        <div class="header-text">
+            <p></p>
+            <h1>Hello,I'm<br><span>Narava Chaitanya Pavani</span></h1>
+        </div>
+    </div>
+</div>
+<!---------------about----------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a dedicated and motivated B.Tech student at Dadi Institute of Engineering and Technology, Anakapalli (2021-2025) with a current CGPA of 8.3. I continuously strive to enhance my skills and apply my knowledge to real-world projects. My strong academic performance and hands-on experience in various technical domains demonstrate my commitment to excellence and continuous learning.  I am eager to explore new opportunities, contribute to innovative projects, and collaborate with like-minded professionals to make a meaningful impact in the tech industry.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span></li>
+                        <li><span>HTML</span></li>
+                        <li><span>CSS</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2025</span><br>BTECH-Dadi Institute of Engineering and Technology, Anakapalli<br> CGPA: 8.35</li>
+                        <li><span>2019-2021</span><br>INTERMEDIATE-Narayana Junior College,Visakhapatnam<br>CGPA:9.5</li>
+                        <li><span>2019</span><br>SECONDARY EDUCATION-Saraswathi Vidya Vihar,Visakhapatnam<br>CGPA:10</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>NPTEL</span>
+                            <ul>
+                                <li>Problem Solving through Programming in C</li>
+                                <li>Programming in Python</li>
+                            </ul>
+                        </li>
+                        <li><span>INFOSYS SPRING BOARD</span>
+                            <ul>
+                                <li>Basics of Python</li>
+                                <li>Html5</li>
+                                <li>Javascript</li>
+                            </ul>
+                        </li>
+                        <li><span>MICROSOFT</span>
+                            <ul>
+                                <li>Azure Fundamentals</li>
+                            </ul>
+                        </li>
+                        <li><span>INTERNSHALA</span>
+                            <ul>
+                                <li>Web Development</li>
+                            </ul>
+                        </li>
+                        <li><span>COURSERA</span>
+                            <ul>
+                                <li>Machine Learning for All</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------Internships-------------->
+<div id="internship">
+    <div class="container">
+        <h1 class="sub-title">Internships</h1>
+        <div class="internship-list">
+            <div>
+                <h2>DATAPRO</h2>
+                <ul>
+                    <li>Industry Internship Training Program on Artificial Intelligence in Real Time 
+                        Applications With Capstone Project At Datapro(MAY-JULY 2024)</li>
+                </ul>
+            </div>
+            <div>
+                <h2>AICTE</h2>
+                <ul>
+                    <li>AI-ML Virtual Internship</li>
+                    <li>Cloud Virtual Internship</li>
+                    <li>Process Mining Virtual Internship</li>
+                    <li>Data Analytics Virtual Internship</li>
+                    <li>Cyber Security Virtual Internship</li>
+                    <li>Google Android Developer Virtual Internship</li>
+                    <li>Data Science Master Virtual Internship</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------portfolio------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="project-1.jpg">
+                <div class="layer">
+                    <h3>Water Potability Prediction</h3>
+                    <p>This helps us to predict whether the water is potable or not</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="project-2.jpg">
+                <div class="layer">
+                    <h3>Plant Disease Detection</h3>
+                    <p>This helps us to detect the disease of the plant</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------------------contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>chaitanyapavaninarava@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8639585612</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Narava_Chaitanya_Pavani_Resume[1].pdf" download class="button btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="button btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Narava Chaitanya Pavani</p>
+    </div>
+</div>
+<script>
+    var tablinks =document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz_qsTvLpAY4TK6rRraOkoGuwgmdOA7lH-Sxtxe0f5nCXX55QCFuaH2DqMNeoy09SykRQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+        })
+        setTimeout(function(){
+            msg.innerHTML=""
+
+        },5000)
+        form.reset()
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
